@@ -1,17 +1,24 @@
 // import React from 'react';
 import './App.css';
-import Header from './components/Header';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import AboutUsPage from './components/AboutUsPage';
 
 function App() {
-  const name = "Sandun";
+  // const name = "Sandun";
   return (
-    <div className="App">
-      {/* <h1>Hello World!</h1>
+    <Router>
+      <div className="App">
+        {/* <h1>Hello World!</h1>
       <h2>Hello {2 + 3}</h2>
       <h3>Hello {2 + 4 === 6 ? name : "User"}</h3> */}
-      <Header />
-    </div>
+        {/* <HomePage /> */}
+        {/* <AboutUsPage /> */}
+        {/* title="Welcome Sandun" */}
+      </div>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/about" component={AboutUsPage} />
+    </Router>
   );
 }
 

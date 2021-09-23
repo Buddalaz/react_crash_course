@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header style */
+.hdr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* joke */
+.card {
+  background-color: yellow;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: block;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: blueviolet !important;
+}
+
+/* About Us Page */
+.about {
+  background-color: coral;
+  padding: 40px;
+}
+
+.about h1 {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about p {
+  background-color: white;
+  color: black;
+  padding: 30px;
+}
+
+/* Footer Style */
+.foo {
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* padding: 10px 20px; */
+  /* flex-shrink: 0;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+  bottom: 0; */
+}
+
+.foo h1 {
+  text-align: center;
+}
